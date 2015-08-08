@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+	<meta name="google" value="notranslate">
+	<meta charset="utf-8"/>
+	<title>Angular HTML Table</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- build:css assets/styles/main.css -->
+	<link rel="stylesheet" href="assets/styles/main.css"/ type="all">
+	<!-- endbuild -->
+</head>
+<!-- apply angular app -->
+<body data-ng-app="htApp">
+	<div class="container">
+		<div ui-view></div>
+	</div>
+
+	<!-- build:js assets/scripts/lib.js -->
+	<script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+
+	<script type="text/javascript" src="../node_modules/angular-ui-router/build/angular-ui-router.min.js"></script>
+
+	<script type="text/javascript" src="assets/lib/HtmlTable.js"></script>
+	<!-- endbuild -->
+
+	<!-- build:js assets/scripts/html-templates.js -->
+	<script type="text/javascript" src="assets/scripts/html-templates.js"></script>
+	<!-- endbuild -->
+
+	<!-- build:js assets/scripts/scripts.js -->
+	<script type="text/javascript" src="assets/scripts/app.js"></script>
+	<script type="text/javascript" src="assets/scripts/modules/htmlTable.js"></script>
+
+	<script type="text/javascript" src="assets/scripts/providers/constants/routes-config.js"></script>
+
+	<script type="text/javascript" src="assets/scripts/providers/factories/htmltable.js"></script>
+
+	<script type="text/javascript" src="assets/scripts/providers/services/people-data.js"></script>
+	<script type="text/javascript" src="assets/scripts/providers/services/htmltable.renders.js"></script>
+
+	<script type="text/javascript" src="assets/scripts/controllers/main-view.js"></script>
+
+	<script type="text/javascript" src="assets/scripts/directives/html-table.js"></script>
+	<!-- endbuild -->
+</body>
+</html>
